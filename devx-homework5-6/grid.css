@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+}
+h3 {
+  font-family: "Source Serif Pro", serif;
+  font-size: 24px;
+  text-align: center;
+}
+.container {
+  margin: 0 55px;
+}
+.icons {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  position: fixed;
+}
+.img-icon {
+  width: 50px;
+}
+.main-img {
+  background-image: url(grid-images/shoes.gif);
+  height: 100vh;
+  background-size: cover;
+}
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sport {
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 42px;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 15%;
+  color: black;
+}
+.links {
+  width: 50%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0;
+}
+.main-links {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+}
+.add-icons {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  gap: 40px;
+}
+.img-add {
+  width: 50px;
+}
+.discounts {
+  display: flex;
+  justify-content: space-evenly;
+}
+.discount {
+  width: 30vw;
+  margin-top: 10px;
+  transition: 1s;
+}
+.discount:hover {
+  transform: scale(1.1);
+}
+.slides {
+  display: flex;
+  flex-direction: column;
+}
+.slide {
+  margin: 20px auto;
+  width: 90vw;
+  height: 60vh;
+}
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.box {
+  width: 30%;
+  height: 300px;
+  font-size: 24px;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  box-shadow: 5px 5px 10px rgb(22, 24, 83);
+}
+.box1 {
+  background-image: url(grid-images/men.png);
+  background-size: cover;
+}
+.box2 {
+  background-image: url(grid-images/kids.png);
+  background-size: cover;
+}
+.box3 {
+  background-image: url(grid-images/women.png);
+  background-size: cover;
+}
+.players {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.playerImg {
+  width: 100%;
+  height: 70vh;
+}
+.player,
+.playerImg {
+  transition: 3s;
+}
+.player:hover {
+  transform: scale(1.1);
+}
+.player:hover .playerImg {
+  transform: translate(-10%, -5%);
+}
+.player1 {
+  background-image: url(grid-images/lukabg.webp);
+  background-size: cover;
+}
+.player2 {
+  background-image: url(grid-images/harden.jpg);
+  background-size: cover;
+}
+.player3 {
+  background-image: url(grid-images/durant.webp);
+  background-size: contain;
+}
+.player4 {
+  background-image: url(grid-images/lebronbg.jpg);
+  background-size: contain;
+}
+.shoes {
+  margin-bottom: 20px;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.card {
+  width: 20%;
+  height: 40vh;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card:hover {
+  border: 3px solid;
+  border-image-source: linear-gradient(-45deg, #59c173, #a17fe0, #5d26c1);
+  border-image-slice: 1;
+}
+
+.shoe-description {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: end;
+  margin: 0;
+}
+.card1 {
+  background-image: url(grid-images/shoe-1.png);
+  background-size: contain;
+}
+.card2 {
+  background-image: url(grid-images/shoe-2.png);
+  background-size: contain;
+}
+.card3 {
+  background-image: url(grid-images/shoe-3.png);
+  background-size: contain;
+}
+.card4 {
+  background-image: url(grid-images/shoe-4.png);
+  background-size: contain;
+}
+
+.places {
+  display: flex;
+  justify-content: space-around;
+}
+.place {
+  width: 20%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  text-shadow: 3px 3px 3px black;
+  font-family: "Source Serif Pro", serif;
+}
+.place1 {
+  background-image: url(grid-images/NY.webp);
+}
+.place2 {
+  background-image: url(grid-images/milan.jpg);
+}
+.place3 {
+  background-image: url(grid-images/bishkek.jpg);
+}
+
+@media screen and (max-width: 576px) {
+  .discounts {
+    display: flex;
+    flex-direction: column;
+  }
+  .discounts {
+    text-align: center;
+  }
+  .boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .box {
+    margin: 0 auto;
+  }
+  .players {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .places {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .discounts {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .players {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .place {
+    width: auto;
+  }
+  .places {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
